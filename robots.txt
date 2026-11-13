@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dawn-cloud-7f24.adef74972.workers.dev/sitemap.xml

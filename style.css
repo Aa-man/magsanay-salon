@@ -1,0 +1,57 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;color:#222;background:#fff}
+a{text-decoration:none;color:inherit}
+header{background:#111;color:#fff;padding:18px 40px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.logo{font-size:24px;font-weight:700;letter-spacing:2px}
+.logo span{color:#d4af37}
+nav a{margin-left:24px;color:#fff;font-size:14px;text-transform:uppercase}
+nav a:hover{color:#d4af37}
+.hero{background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600') center/cover;height:85vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero h1{font-size:58px;margin-bottom:16px}
+.hero p{font-size:20px;margin-bottom:30px}
+.btn{background:#d4af37;color:#111;padding:14px 32px;border:none;cursor:pointer;font-weight:600;text-transform:uppercase;letter-spacing:1px}
+.section{padding:70px 40px;max-width:1200px;margin:0 auto}
+.section h2{text-align:center;font-size:36px;margin-bottom:12px}
+.section .sub{text-align:center;color:#777;margin-bottom:50px}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+.card{background:#f9f9f9;padding:30px;border-radius:8px;text-align:center;transition:.3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 8px 20px rgba(0,0,0,.1)}
+.card h3{margin:16px 0 8px;color:#d4af37}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:6px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.about img{width:100%;border-radius:8px}
+.booking{background:#111;color:#fff;padding:60px 40px;text-align:center}
+
+.booking .btn{display:inline-block;margin-top:24px;border-radius:5px}
+footer{background:#000;color:#aaa;text-align:center;padding:30px;font-size:14px}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+.btn{display:inline-block;border-radius:5px;transition:background .2s,transform .2s}
+.btn:hover{background:#ebcc65;transform:translateY(-2px)}
+:focus-visible{outline:3px solid #d4af37;outline-offset:4px}
+.booking h2{font-size:34px;margin-bottom:14px}.booking p{line-height:1.7;max-width:650px;margin:0 auto}
+.notice{font-size:13px;color:#bbb;margin-top:16px!important}
+.btn:disabled{opacity:.55;cursor:default;transform:none}
+.secondary{display:inline-block;border:1px solid #aaa;padding:10px 16px;border-radius:4px;margin-top:18px;font:inherit;background:transparent;cursor:pointer}
+.secondary:hover{background:#e9dfc5}.gallery button{border:0;background:none;cursor:zoom-in}.gallery img{display:block}.gallery button:hover img{filter:brightness(.85)}
+dialog{margin:auto;border:0;border-radius:8px;padding:12px;background:#111;max-width:92vw}dialog::backdrop{background:#000c}dialog img{max-width:85vw;max-height:80vh;display:block}
+#closePhoto{position:absolute;right:20px;top:20px;background:white;border:0;border-radius:50%;width:36px;height:36px;font-size:26px;cursor:pointer}
+.map-frame{border:0;border-radius:8px}.map-link{text-align:center;margin-top:24px}
+@media(max-width:768px){header{padding:18px 20px;flex-wrap:wrap;gap:18px}nav{display:flex;gap:15px;flex-wrap:wrap}nav a{margin:0;font-size:12px}.section{padding:50px 20px}.booking{padding:50px 20px}.hero{padding:20px;height:70vh}.hero h1{font-size:36px}.hero p{font-size:18px}.about{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+.service-group-title{font-size:24px;margin:38px 0 22px;color:#6b2589}.card h3{color:#643079;line-height:1.5;margin:0;font-size:18px}.logo{font-size:20px}.logo span{font-size:15px;letter-spacing:1px}
+.christmas-banner{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;padding:14px 20px;background:#f6ecfa;color:#67218c;font-size:14px}.christmas-banner button{border:0;border-bottom:1px solid #873fa3;background:none;color:#67218c;cursor:pointer;font:inherit;font-weight:700;padding:4px}
+.christmas-modal{padding:0;width:min(530px,calc(100vw - 28px));max-width:530px;max-height:90dvh;background:#fff8fe;color:#572074;border:1px solid #e9cbef;border-radius:18px;overflow-y:auto;overscroll-behavior:contain;box-shadow:0 25px 100px #20072b66}.christmas-modal::backdrop{background:#1f0b2bc9;backdrop-filter:blur(5px)}
+.promo-header{position:sticky;top:0;z-index:1;background:#fff8fef5;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:13px;font-weight:700;letter-spacing:.5px;border-bottom:1px solid #ecd7f0}.promo-close{width:38px;height:38px;border-radius:50%;background:#efdfF5;color:#572074;border:0;font-size:28px;cursor:pointer;flex-shrink:0}.promo-poster img{width:100%;height:auto;max-width:none;max-height:none;display:block}.promo-poster img[hidden]{display:none}.promo-fallback{padding:32px 30px;text-align:center;background:radial-gradient(ellipse at top right,#e6baf6 0,transparent 58%),radial-gradient(ellipse at bottom left,#edc5e8 0,transparent 60%),#fff5fd}.promo-fallback[hidden]{display:none}.promo-sparkle{color:#ae79be;font-size:32px;letter-spacing:15px}.promo-eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;margin:20px 0 15px}.promo-fallback h2{font-family:Georgia,serif;font-size:46px;line-height:1.15;color:#602080}.promo-script{font-family:Georgia,serif;font-style:italic;font-size:24px;color:#8b3aa1;margin:20px 0}.promo-fallback p{line-height:1.6}.promo-fallback ul{list-style:none;margin:22px 0 0;line-height:1.6;font-size:13px}.promo-fallback li{padding:8px;border-bottom:1px solid #dfc4e8}.promo-footer{padding:20px;display:grid;gap:13px;text-align:center}.promo-footer .btn{font-size:12px;line-height:1.6;background:#752c94;color:#fff;padding:14px 18px}.promo-footer .btn:hover{background:#58216f}.promo-later{background:none;border:0;color:#72577f;font:inherit;font-size:13px;cursor:pointer;padding:8px}body.promo-open{overflow:hidden}
+@media(max-width:768px){.logo{font-size:17px}.logo span{font-size:13px}.christmas-banner{gap:8px;font-size:12px}.service-group-title{font-size:22px}.promo-fallback h2{font-size:36px}.promo-fallback{padding:25px 20px}.christmas-modal{max-height:92dvh}}
+
+.gallery{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));align-items:stretch}
+.gallery-item{margin:0;border:1px solid #e9e2d7;border-radius:12px;overflow:hidden;background:#faf8f4}.gallery-photo{height:260px;background:#eee9e1;position:relative}.gallery-photo>button{display:block;width:100%;height:100%;overflow:hidden}.gallery-photo img{height:100%;width:100%;object-fit:cover;border-radius:0;transition:transform .3s}.gallery-brand .gallery-photo{background:#080808}.gallery-brand img{object-fit:contain}.gallery-photo button:hover img{transform:scale(1.035)}.gallery-item figcaption{padding:17px 18px;font-size:14px;font-weight:600;color:#554a3b}.gallery-placeholder{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:24px;text-align:center;background:linear-gradient(145deg,#211b13,#080808);color:#e0c174}.gallery-placeholder[hidden]{display:none}.gallery-placeholder span{font-family:Georgia,serif;font-size:25px}.gallery-placeholder a{font-size:13px;text-decoration:underline;text-underline-offset:4px}.gallery-more{display:flex;min-height:315px;flex-direction:column;align-items:center;justify-content:center;gap:15px;padding:30px;border:1px solid #c6a66a;border-radius:12px;text-align:center;background:linear-gradient(145deg,#211c16,#0e0d0c);color:#e6cc8e;transition:transform .2s,box-shadow .2s}.gallery-more:hover{transform:translateY(-4px);box-shadow:0 12px 30px #0002}.gallery-more-icon{display:grid;place-items:center;width:48px;height:48px;border:1px solid #786338;border-radius:50%;font-size:30px;font-weight:300}.gallery-more h3{font-family:Georgia,serif;font-size:26px;font-weight:400}.gallery-more p{color:#c4b9a8;font-size:14px;line-height:1.7;max-width:230px}.gallery-more-link{font-size:13px;font-weight:600;border-bottom:1px solid #8e784b;padding-bottom:5px}.gallery-hours{text-align:center;color:#777;margin-top:25px;font-size:14px}
+@media(max-width:550px){.gallery{grid-template-columns:1fr}.gallery-photo{height:300px}.gallery-more{min-height:260px}}
+
+header{gap:18px;flex-wrap:wrap}.language-switch{display:flex;gap:4px;border:1px solid #6d5c36;border-radius:24px;padding:4px;flex-shrink:0}.language-switch button{border:0;background:transparent;color:#eee;padding:8px 13px;border-radius:18px;font:inherit;font-size:13px;cursor:pointer}.language-switch button[aria-pressed="true"]{background:#d4af37;color:#111;font-weight:700}.language-switch button:hover{background:#594a28;color:#fff}.language-switch button[aria-pressed="true"]:hover{background:#ebcc65;color:#111}nav{display:flex;flex-wrap:wrap;gap:18px}nav a{margin-left:0}.hero h1{overflow-wrap:break-word}.promo-header span{line-height:1.5}
+@media(max-width:768px){header{gap:12px}.logo{flex:1}.language-switch{margin-left:auto;order:1}header nav{order:2;width:100%;gap:16px}.language-switch button{padding:7px 10px;font-size:12px}.hero h1{font-size:34px}.hero p{line-height:1.7}}
+
+.salon-details{text-align:center;line-height:1.8;margin:-20px auto 30px;max-width:650px}.salon-details p{margin:10px 0}.salon-details strong{font-size:20px}.salon-services-summary,.salon-hours-summary{color:#666}
